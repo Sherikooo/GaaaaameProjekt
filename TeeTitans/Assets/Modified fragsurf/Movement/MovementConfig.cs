@@ -7,7 +7,8 @@ namespace Fragsurf.Movement {
         [Header ("Jumping and gravity")]
         public bool autoBhop = true;
         public float gravity = 20f;
-        public float jumpForce = 6.5f;
+        public float jumpForce = 8.5f;
+        public int maxJumps = 2;
         
         [Header ("General physics")]
         public float friction = 6f;
@@ -18,7 +19,7 @@ namespace Fragsurf.Movement {
         [Header ("Air movement")]
         public bool clampAirSpeed = true;
         public float airCap = 0.4f;
-        public float airAcceleration = 12f;
+        public float airAcceleration = 0.5f;
         public float airFriction = 0.4f;
 
         [Header ("Ground movement")]
@@ -40,15 +41,6 @@ namespace Fragsurf.Movement {
         public float slideFriction = 14f;
         public float downhillSlideSpeedMultiplier = 2.5f;
         public float slideDelay = 0.5f;
-
-        [Header ("Underwater")]
-        public float swimUpSpeed = 12f;
-        public float underwaterSwimSpeed = 3f;
-        public float underwaterAcceleration = 6f;
-        public float underwaterDeceleration = 3f;
-        public float underwaterFriction = 2f;
-        public float underwaterGravity = 6f;
-        public float underwaterVelocityDampening = 2f;
         
     }
 
